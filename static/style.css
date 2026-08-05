@@ -1,0 +1,110 @@
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at 20% 0%, #1c2b3a 0%, #0f1720 55%);
+    min-height:100vh;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    width:450px;
+    margin:40px auto;
+    background:#16212c;
+    padding:36px 40px;
+    border-radius:12px;
+    border:1px solid #223142;
+    box-shadow:0 25px 50px -20px rgba(0,0,0,0.6);
+    color:#e7edf3;
+}
+
+h1{
+    text-align:center;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    color:#e7edf3;
+    margin-top:0;
+    margin-bottom:8px;
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:6px;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    color:#e8a33d;
+}
+
+input{
+    width:100%;
+    padding:11px 12px;
+    margin-top:0;
+    background:#0b1119;
+    border:1px solid #223142;
+    border-radius:6px;
+    color:#e7edf3;
+    font-size:14px;
+    box-sizing:border-box;
+    transition:border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:hover{
+    border-color:#33465a;
+}
+
+input:focus{
+    outline:none;
+    border-color:#3da5a0;
+    box-shadow:0 0 0 3px rgba(61,165,160,0.18);
+}
+
+button{
+    width:100%;
+    padding:13px;
+    margin-top:24px;
+    background:#e8a33d;
+    color:#1a1305;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover{
+    background:#f0b358;
+}
+
+button:active{
+    transform:translateY(1px);
+}
+
+.result{
+    margin-top:30px;
+    padding:20px;
+    text-align:center;
+    background:#0b1119;
+    border:1px solid #3da5a0;
+    border-radius:8px;
+    color:#e7edf3;
+}
+
+.result h2{
+    margin:0 0 6px;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:#3da5a0;
+}
+
+.result h1{
+    margin:0;
+    font-size:32px;
+    color:#e7edf3;
+}
