@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TVT Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Wellbore TVT Prediction System</h1>
+
+    <form method="POST">
+
+        <label>MD</label>
+        <input type="number" step="any" name="MD" required>
+
+        <label>X</label>
+        <input type="number" step="any" name="X" required>
+
+        <label>Y</label>
+        <input type="number" step="any" name="Y" required>
+
+        <label>Z</label>
+        <input type="number" step="any" name="Z" required>
+
+        <label>GR</label>
+        <input type="number" step="any" name="GR" required>
+
+        <br><br>
+
+        <button type="submit">
+            Predict TVT
+        </button>
+
+    </form>
+
+    {% if prediction is not none %}
+
+    <div class="result">
+
+        <h2>
+            Predicted TVT:
+        </h2>
+
+        <h1>{{ prediction }}</h1>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
